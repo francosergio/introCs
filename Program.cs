@@ -14,7 +14,7 @@ namespace cursoIntroCS
             int final = fullNum + 1;
             int[] array = new[] { 2, 3, 4 };
             for (int i = 0; i < array.Length; i++) {
-                Console.WriteLine("ingresar el " + (i + 1) + " numero ");
+                Console.WriteLine("ingresar el " + (i + 1) + " numero {0}",final,"ahora con $",final);
                 array[i] = int.Parse(Console.ReadLine());
             }
 
@@ -22,6 +22,8 @@ namespace cursoIntroCS
             {
                 Console.WriteLine(array[i]);
             }
+            //para buscar dentro de un arreglo, existe la funcion Array.IndexOf(nombreDelArray,LoQueVoyABuscar);
+            Array.IndexOf(array,fullNum);
 
 
             /*LISTAS EN CS
